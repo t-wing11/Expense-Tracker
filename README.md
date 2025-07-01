@@ -17,9 +17,6 @@ python -m venv venv
 # Install dependencies
 pip install -r requirements.txt
 
-
-Frontend:
-
 # Navigate to frontend folder
 cd vue-exspense-tracker
 
@@ -27,22 +24,21 @@ cd vue-exspense-tracker
 npm install
 
 
-✅ 2. Start the Backend (Flask)
+# ✅ 2. Start the Backend (Flask)
 
-# Make sure your virtualenv is activated
-# Then run:
+Make sure your virtualenv is activated
+Then run:
 flask run (Runs on http://localhost:5000)
 
-✅ 3. Start the Frontend (Vue)
+# ✅ 3. Start the Frontend (Vue)
 
 # Navigate to frontend folder
 cd vue-exspense-tracker
-
-# Start the dev server
+Start the dev server
 npm run dev
 Runs on http://localhost:5173 (or another port if 5173 is taken)
 
-📡 API Endpoints
+# 📡 API Endpoints
 GET /expenses → Get all transactions
 
 POST /expenses → Add new transaction
@@ -53,7 +49,7 @@ POST /expenses → Add new transaction
 
 DELETE /expenses/<id> → Delete transaction by ID
 
-⚙️ Example Requests (using curl)
+# ⚙️ Example Requests (using curl)
 Add Transaction
 
 curl -X POST http://localhost:5000/expenses \
@@ -71,7 +67,7 @@ curl -X DELETE http://localhost:5000/expenses/1
 
 
 
-⚡ Tech Stack
+# ⚡ Tech Stack
 Frontend: Vue 3 (Vite, Composition API, Axios)
 
 Backend: Python Flask + Flask-CORS
