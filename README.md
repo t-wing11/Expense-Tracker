@@ -1,4 +1,4 @@
-📒 Expense Tracker — Vue3 + Flask
+# 📒 Expense Tracker — Vue3 + Flask
 This is a simple expense tracker app with a Vue 3 frontend and a Flask backend API.
 You can add and delete transactions — and they persist on the backend *as long as the server is running)
 
