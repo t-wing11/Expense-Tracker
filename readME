@@ -1,0 +1,24 @@
+How to run backend
+
+# Create venv
+python -m venv venv
+
+# Activate venv (PowerShell)
+venv\Scripts\Activate
+
+pip install -r requirements.txt
+
+flask run
+
+Invoke-RestMethod -Uri http://localhost:5000/expenses -Method GET
+
+Invoke-RestMethod -Uri http://localhost:5000/expenses `
+  -Method POST `
+  -Body '{"text":"Coffee","amount":-3.5}' `
+  -ContentType "application/json"
+
+Invoke-RestMethod -Uri http://localhost:5000/expenses/1 `
+  -Method DELETE
+
+
+
